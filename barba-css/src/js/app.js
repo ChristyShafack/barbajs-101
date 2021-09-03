@@ -23,6 +23,7 @@ barba.init({
         namespace: ['home'],
       },
       sync: true,
+
       // barba hooks
       // beforeOnce() { },
       // Never runs with the css plugin
