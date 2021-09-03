@@ -1,11 +1,12 @@
 /* Clip-path transition */
 /* Leaving fade page to clip page */
-/* clip out current container */
+
+/* clip out current container (page leaving) */
 .clip-leave {
     opacity: 1;
 }
 .clip-leave-active {
-    transition: opacity 1s linear 1.2s;
+    transition: opacity 0.75s linear;
 }
 /* Slide to home */
 .clip-leave-to {
@@ -14,14 +15,17 @@
 
 /* clip in enetering container */
 .clip-enter {
-    opacity: 0;
+    clip-path: circle(0%);
 }
 .clip-enter-active {
-    transition: opacity 1s linear 1.2s;
+    transition: all 0.75s linear;
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }
 /* Slide to home */
 .clip-enter-to {
-    opacity: 1;
+    clip-path: circle(75%);
 }   
 
 

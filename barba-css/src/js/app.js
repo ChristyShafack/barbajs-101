@@ -38,11 +38,13 @@ barba.init({
       enter() { },
     }, {
       name: 'clip',
+      sync: true,
       to: {
         namespace: ['clip'],
       },
       leave() { },
       enter() { },
+      beforeEnter() { },
     },
   ],
 });
