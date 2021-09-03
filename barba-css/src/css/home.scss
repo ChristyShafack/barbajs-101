@@ -1,11 +1,11 @@
 /* Page load animation */
-.barba-once {
+.home-once {
     opacity: 0;
 }
-.barba-once-active {
-    transition: opacity 1s linear;
+.home-once-active {
+    transition: opacity 1s linear 0.3s;
 }
 /* Slide to home */
-.barba-once-to {
+.home-once-to {
     opacity: 1;
 }

@@ -1,1 +1,27 @@
+/* Leaving one page to another */
 /* Fade out current container */
+.fade-leave {
+    opacity: 1;
+}
+.fade-leave-active {
+    transition: opacity 1s linear;
+}
+/* Slide to home */
+.fade-leave-to {
+    opacity: 0;
+}   
+
+/* Fade in enetering container */
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    transition: opacity 1s linear;
+}
+/* Slide to home */
+.fade-enter-to {
+    opacity: 1;
+}   
+
+
+
