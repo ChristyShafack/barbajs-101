@@ -1,1 +1,28 @@
 /* Clip-path transition */
+/* Leaving fade page to clip page */
+/* clip out current container */
+.clip-leave {
+    opacity: 1;
+}
+.clip-leave-active {
+    transition: opacity 1s linear 1.2s;
+}
+/* Slide to home */
+.clip-leave-to {
+    opacity: 0;
+}   
+
+/* clip in enetering container */
+.clip-enter {
+    opacity: 0;
+}
+.clip-enter-active {
+    transition: opacity 1s linear 1.2s;
+}
+/* Slide to home */
+.clip-enter-to {
+    opacity: 1;
+}   
+
+
+

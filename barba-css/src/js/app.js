@@ -8,34 +8,41 @@ const body = document.querySelector('body');
 
 // Global hook before that will run before any transition
 barba.hooks.before((data) => {
-    const background = data.current.container.dataset.background;
-    body.style.setProperty('--page-background', background);
-})
+  const background = data.current.container.dataset.background;
+  body.style.setProperty('--page-background', background);
+});
 
 // init Barba
 barba.init({
 
-    // Array of transition objects
-    transitions: [
-        {
-            name: 'home',
+  // Array of transition objects
+  transitions: [
+    {
+      name: 'home',
 
-            // barba hooks
-            beforeOnce() {
+      // barba hooks
+      beforeOnce() {
 
-            },
+      },
 
-            // Never runs with the css plugin
-            once() { },
-            afterOnce() {
-            },
-        }, {
-            name: 'fade',
-            to: {
-                namespace: ['fade'],
-            },
-            leave() { },
-            enter() { },
-        },
-    ],
+      // Never runs with the css plugin
+      once() { },
+      afterOnce() {
+      },
+    }, {
+      name: 'fade',
+      to: {
+        namespace: ['fade'],
+      },
+      leave() { },
+      enter() { },
+    }, {
+      name: 'clip',
+      to: {
+        namespace: ['clip'],
+      },
+      leave() { },
+      enter() { },
+    },
+  ],
 });
