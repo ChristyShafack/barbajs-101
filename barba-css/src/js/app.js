@@ -19,16 +19,18 @@ barba.init({
   transitions: [
     {
       name: 'home',
-
-      // barba hooks
-      beforeOnce() {
-
+      to: {
+        namespace: ['home'],
       },
-
+      sync: true,
+      // barba hooks
+      // beforeOnce() { },
       // Never runs with the css plugin
       once() { },
-      afterOnce() {
-      },
+      leave() { },
+      enter() { },
+
+      // afterOnce() { },
     }, {
       name: 'fade',
       to: {
