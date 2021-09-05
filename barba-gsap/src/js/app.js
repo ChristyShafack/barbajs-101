@@ -1,6 +1,17 @@
 import barba from '@barba/core';
+import barbaPrefetch from '@barba/prefetch';
+import barbaRouter from '@barba/router';
 import gsap from 'gsap/all';
 import { revealProject, leaveToProject, leaveFromProject, animationEnter, animationLeave } from './animations';
+
+const myRouter = [
+  { name: 'home', path: ' /index.html' },
+  { name: 'architecture', path: ' /architecture.html' },
+  { name: 'detail', path: ' /detail-page.html' },
+]
+
+barba.use(barbaPrefetch);
+barba.use(barbaRouter);
 
 const resetActiveLink = () => gsap.set('a.is-active span', {
   xPercent: -100,
