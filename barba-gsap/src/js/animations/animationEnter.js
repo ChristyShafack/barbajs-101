@@ -29,7 +29,7 @@ const animationEnter = (container) => {
       xPercent: 101,
       stagger: 0.1
     }, 0);
-  tl.timeScale(0.2)
+  // tl.timeScale(0.2)
   return tl;
 
 };

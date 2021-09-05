@@ -15,7 +15,7 @@ const animationLeave = (container) => {
     .to(activeLink, { xPercent: 101 }, 0)
     .to(images, { xPercent: 101, stagger: 0.05 }, 0)
     .to(img, { xPercent: -101, stagger: 0.05 }, 0)
-  tl.timeScale(0.2)
+  // tl.timeScale(0.2)
 
   return tl;
 };
