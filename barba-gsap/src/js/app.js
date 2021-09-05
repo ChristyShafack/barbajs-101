@@ -7,6 +7,12 @@ const resetActiveLink = () => gsap.set('a.is-active span', {
   transformOrigin: 'left',
 });
 
+// Global Hooks
+barba.hooks.enter(() => {
+  console.log('enter');
+  window.scrollTo(0, 0)
+});
+
 barba.init({
   transitions: [
     {
