@@ -6,7 +6,7 @@ const animationEnter = (container) => {
   const activeLink = container.querySelector('a.is-active span');
   const projects = container.querySelectorAll('.project');
   const images = container.querySelectorAll('.image');
-  const img = container.querySelectorAll('.img');
+  const img = container.querySelectorAll('img');
 
   const tl = gsap.timeline({
     defaults: {
@@ -29,7 +29,7 @@ const animationEnter = (container) => {
       xPercent: 101,
       stagger: 0.1
     }, 0);
-
+  tl.timeScale(0.2)
   return tl;
 
 };
